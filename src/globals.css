@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #2D2D2B;
+}
+
+a, li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.linha {
+    height: 26px;
+    width: 100%;
+    background-color: #A15046;
+}
+
+.header li {
+    display: flex;
+    
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-left: 2%;
+}
+
+.pesquisar {
+    width: 25px;
+    height: auto;
+    margin-right: 2%;
+}
+
+.paginas-link {
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+    font-size: 14px;
+    color: #2D2D2B;
+}
+
+.explore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+}
+
+.textinho-explore, .paginas-textinho {
+    text-align: center;
+    padding: 20px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+.paginas-textinho:hover {
+    transition: 0.3s;
+    background-color: #f7f7f7;
+}
+
+.bloco-home {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagem-bloco-home {
+    width: 100%;
+    height: auto;
+}
