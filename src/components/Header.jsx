@@ -6,7 +6,7 @@ export default function Header(){
         <header>
             <div class="linha"></div>
             <div id="header">
-                <img class="logo" src="logo.png" alt="logo"/>
+                <img class="logo" src="../HomeImage/logo.png" alt="logo"/>
                 <div class="paginas-link">
                     <Link to="/home">
                         <li class="paginas-textinho">Home</li>
@@ -20,7 +20,7 @@ export default function Header(){
                         <li class="paginas-textinho">Ofertas</li>
                     </Link>
                 </div>
-                <img class="pesquisar" src="pesquisar.png" alt="pesquisar"/>   
+                <img class="pesquisar" src="../HomeImage/pesquisar.png" alt="pesquisar"/>   
             </div>
         </header>
     );

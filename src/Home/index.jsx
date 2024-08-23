@@ -45,15 +45,13 @@ export default function Home() {
                 dynamicHeight
             >
                 <div>
-                    <img src="https://cf.farmriosoma.farmrio.com.br/site/2024/08_AGOSTO/12_ANIVERSARIO-FARMRIO-ULTIMOS-DIAS/12-08-24-banner-tv-vitrine-aniversario-farm-rio-25-off-5-off-cupom-desktop.jpg" alt="teste1"/>
+                <video src="../HomeImage/video-carrossel1.mp4" width="100%" height="auto"></video>
                 </div>
                 <div>
-                    <img src="https://cf.farmriosoma.farmrio.com.br/site/2024/08_AGOSTO/07_VITRINE/desktop/07-08-24-home-banner-tv-vitrine-desktop.jpg" alt="teste2"/>
-                </div>
-                <div>
-                    <img src="https://cf.farmriosoma.farmrio.com.br/site/2024/08_AGOSTO/07_LOJIX-REPRISE/07-08-24-home-banner-tv-lojix-reprise-desktop.jpg" alt="teste3"/>
+                <video src="../HomeImage/video-carrossel2.mp4" width="100%" height="auto" class="sc-ipEyDJ iSrHvC"></video>
                 </div>
             </Carousel>
+            <video src="https://cf.farmriosoma.farmrio.com.br/site/2024/08_AGOSTO/20-VITRINE/desktop/20-08-24-home-banner-sec-vestidos-desktop.mp4" class="sc-ipEyDJ eHILdL" width="100%" height="auto "></video>
             <div class="explore">
                 <h2 class="textinho-explore">EXPLORE OS NOSSOS DESTAQUES DA SEMANA</h2>
             </div>
@@ -74,6 +72,7 @@ export default function Home() {
             )
           }
           </div>
+          <img width="100%" height="auto" src="../HomeImage/image-bazar-home.png"/>
        </div>
       );
     }

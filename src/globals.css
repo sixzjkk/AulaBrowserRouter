@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     color: #2D2D2B;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* PÁGINA HOME */
 
 a, li {
     text-decoration: none;
@@ -12,7 +16,7 @@ a, li {
 .linha {
     height: 26px;
     width: 100%;
-    background-color: #A15046;
+    background-color: #3F4E04;
 }
 
 .header li {
@@ -44,7 +48,6 @@ a, li {
     display: flex;
     justify-content: center;
     margin-right: 5%;
-    font-family: Arial, Helvetica, sans-serif;
     text-transform: lowercase;
     font-size: 14px;
     color: #2D2D2B;
@@ -61,8 +64,8 @@ a, li {
 .textinho-explore, .paginas-textinho {
     text-align: center;
     padding: 20px 16px;
-    font-family: Arial, Helvetica, sans-serif;
     transition: 0.3s;
+    
 }
 
 .paginas-textinho:hover {
@@ -78,4 +81,120 @@ a, li {
 .imagem-bloco-home {
     width: 100%;
     height: auto;
+    transition: 0.4s;
+    cursor: pointer;
 }
+
+.imagem-bloco-home:hover {
+    transition: 0.5s;
+    opacity: 60%;
+}
+
+.imagem-principal-p {
+    width: 100%;
+    height: auto;
+}
+
+
+/* PÁGINA DE PRODUTOS */
+
+.container-c-p {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    padding: 20px 0;
+}
+
+.texto-s-p {
+    font-size: 14px;
+    margin-right: 10px;
+    color: #2D2D2B;
+}
+
+.quantidade-produto {
+    font-size: 14px;
+    color: #000000;
+    opacity: 35%;
+}
+
+.linha-p {
+    position: absolute;
+    width: 95%;
+    height: 1px;
+    margin-left: 2%;
+    background: #000000;
+    opacity: 20%;
+}
+
+.container-imagem {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-left: 2%;
+}
+
+.imagem-bloco-produto {
+    display: inline-block;
+    width: 100%;
+}
+
+.imagem-bloco-produto img {
+    width: 100%;
+    height: auto;
+}
+
+.textinho-carrinho {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.button-adicionar-retirar {
+    width: 300px;
+    height: 30px;
+    background-color: #3F4E04;
+    border-radius: 2px;
+    color: white;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.info-produto-nome {
+    margin-top: 10px;
+    margin-left: 1px;
+}
+
+.info-produto-preco {
+    color: #999999;
+    font-weight: 500;
+    margin: 7px 0;
+}
+
+
+/* PÁGINA DE OFERTA */
+
+/* a */
+
+.preco-desconto {
+    display: flex;
+    flex-direction: row;
+    margin: 7px 0;
+}
+
+.info-produto-preco-oferta {
+    color: #999999;
+    font-size: 13px;
+    text-decoration-line: line-through;
+}
+
+.info-produto-preco-desconto {
+    color: #FE6F66;
+    font-weight: 550; 
+    font-size: 14px; 
+    margin-left: 5px; 
+}
+
+
+
+
