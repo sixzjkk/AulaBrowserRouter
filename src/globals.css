@@ -6,7 +6,7 @@
 }
 
 
-/* PÁGINA HOME */
+/* HEADER */
 
 a, li {
     text-decoration: none;
@@ -55,6 +55,9 @@ a, li {
     color: #2D2D2B;
 }
 
+
+/* PÁGINA HOME */
+
 .container-2-i {
     display: flex;
     flex-direction: row;
@@ -65,6 +68,8 @@ a, li {
 .image-1-2, .image-2-2 {
     width: 50%;
     height: auto;
+    transition: 0.4s;
+    cursor: pointer;
 }
 
 .explore {
@@ -99,7 +104,7 @@ a, li {
     cursor: pointer;
 }
 
-.imagem-bloco-home:hover, .imagem-bloco-produto:hover {
+.imagem-bloco-home:hover, .imagem-bloco-produto:hover, .image-1-2:hover, .image-2-2:hover {
     transition: 0.5s;
     opacity: 70%;
 }
@@ -233,12 +238,14 @@ a, li {
 .titulos-container {
     letter-spacing: 0.07em;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .texto-conteudo {
     font-size: 12px;
     letter-spacing: 0.08em;
     margin: 15px 0;
+    cursor: pointer;
 }
 
 .titulos-container:hover, .texto-conteudo:hover {
