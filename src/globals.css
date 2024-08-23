@@ -295,6 +295,7 @@ a, li {
    
     .container-imagem {
         grid-template-columns: repeat(1, 1fr);
+        margin-left: 4.9%;
     }
 
     .bloco-home {
@@ -305,12 +306,18 @@ a, li {
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-left: 20%;
+        margin-left: 10%;
 
     }
 
-    .container-imagem {
-        margin-left: 4.9%;
+    .conteudo-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+    }
+
+    .texto-conteudo {
+        margin-right: 1%;
     }
 
     .button-adicionar-retirar {
