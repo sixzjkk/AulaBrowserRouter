@@ -3,24 +3,23 @@ import { Link } from "react-router-dom";
 export default function Header(){
 
     return(
-        <header>
-            <div class="linha"></div>
+        <header className="header"> 
             <div id="header">
-                <img class="logo" src="../HomeImage/logo.png" alt="logo"/>
-                <div class="paginas-link">
+                <img className="logo" src="../HomeImage/logo.png" alt="logo"/>
+                <div className="paginas-link">
                     <Link to="/home">
-                        <li class="paginas-textinho">Home</li>
+                        <li className="paginas-textinho">Home</li>
                     </Link>
 
                     <Link to="/produto">
-                        <li class="paginas-textinho">Produtos</li>
+                        <li className="paginas-textinho">Produtos</li>
                     </Link>
 
                     <Link to="/oferta">
-                        <li class="paginas-textinho">Ofertas</li>
+                        <li className="paginas-textinho">Ofertas</li>
                     </Link>
                 </div>
-                <img class="pesquisar" src="../HomeImage/pesquisar.png" alt="pesquisar"/>   
+                <img className="pesquisar" src="../HomeImage/pesquisar.png" alt="pesquisar"/>   
             </div>
         </header>
     );

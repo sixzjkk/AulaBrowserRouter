@@ -1,4 +1,5 @@
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../globals.css';
@@ -45,22 +46,38 @@ export default function Home() {
                 dynamicHeight
             >
                 <div>
-                <video src="../HomeImage/video-carrossel1.mp4" width="100%" height="auto"></video>
+                <video src="../HomeImage/video-carrossel1.mp4" width="100%" height="auto" 
+                autoPlay
+                muted
+                loop>
+                </video>
                 </div>
                 <div>
-                <video src="../HomeImage/video-carrossel2.mp4" width="100%" height="auto" class="sc-ipEyDJ iSrHvC"></video>
+                <video src="../HomeImage/video-carrossel2.mp4" width="100%" height="auto" 
+                autoPlay
+                muted
+                loop>
+                </video>
                 </div>
             </Carousel>
-            <video src="https://cf.farmriosoma.farmrio.com.br/site/2024/08_AGOSTO/20-VITRINE/desktop/20-08-24-home-banner-sec-vestidos-desktop.mp4" class="sc-ipEyDJ eHILdL" width="100%" height="auto "></video>
-            <div class="explore">
-                <h2 class="textinho-explore">EXPLORE OS NOSSOS DESTAQUES DA SEMANA</h2>
+            <video src="https://cf.farmriosoma.farmrio.com.br/site/2024/08_AGOSTO/20-VITRINE/desktop/20-08-24-home-banner-sec-vestidos-desktop.mp4" width="100%" height="auto "
+            autoPlay
+            muted
+            loop
+            ></video>
+            <div className="container-2-i">
+              <img className="image-1-2" src="../HomeImage/image-1-de-2.png"/>
+              <img className="image-1-2"src="../HomeImage/image-2-de-2.png"/>
+            </div>
+            <div className="explore">
+                <h2 className="textinho-explore">EXPLORE OS NOSSOS DESTAQUES DA SEMANA</h2>
             </div>
           </div>
-          <div class="bloco-home">
+          <div className="bloco-home">
            {
               listaProdutos.map((produto)=> 
                  <div key={produto.id}>
-                    <img class="imagem-bloco-home" src={produto.imagem}/>
+                    <img className="imagem-bloco-home" src={produto.imagem}/>
                   </div>
               )
            }
@@ -73,6 +90,11 @@ export default function Home() {
           }
           </div>
           <img width="100%" height="auto" src="../HomeImage/image-bazar-home.png"/>
+          <video src="../HomeImage/video3.mp4" width="100%" height="auto" 
+          autoPlay
+          muted
+          loop/>
+        <Footer/>
        </div>
       );
     }

@@ -13,15 +13,17 @@ a, li {
     list-style-type: none;
 }
 
-.linha {
-    height: 26px;
-    width: 100%;
-    background-color: #3F4E04;
-}
-
 .header li {
     display: flex;
     
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: white;
 }
 
 #header {
@@ -51,6 +53,18 @@ a, li {
     text-transform: lowercase;
     font-size: 14px;
     color: #2D2D2B;
+}
+
+.container-2-i {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.image-1-2, .image-2-2 {
+    width: 50%;
+    height: auto;
 }
 
 .explore {
@@ -85,9 +99,9 @@ a, li {
     cursor: pointer;
 }
 
-.imagem-bloco-home:hover {
+.imagem-bloco-home:hover, .imagem-bloco-produto:hover {
     transition: 0.5s;
-    opacity: 60%;
+    opacity: 70%;
 }
 
 .imagem-principal-p {
@@ -97,6 +111,10 @@ a, li {
 
 
 /* PÁGINA DE PRODUTOS */
+
+.imagem-principal-p {
+    margin-top: 60px;
+}
 
 .container-c-p {
     display: flex;
@@ -123,7 +141,7 @@ a, li {
     height: 1px;
     margin-left: 2%;
     background: #000000;
-    opacity: 20%;
+    opacity: 15%;
 }
 
 .container-imagem {
@@ -132,32 +150,34 @@ a, li {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-left: 2%;
+    margin-top: 3%;
 }
 
 .imagem-bloco-produto {
     display: inline-block;
     width: 100%;
-}
-
-.imagem-bloco-produto img {
-    width: 100%;
-    height: auto;
-}
-
-.textinho-carrinho {
-    display: flex;
-    justify-content: center;
-    
+    cursor: pointer;
 }
 
 .button-adicionar-retirar {
     width: 300px;
-    height: 30px;
-    background-color: #3F4E04;
-    border-radius: 2px;
+    height: 40px;
+    background-color: #333333;
+    border-radius: 50px;
     color: white;
     border: none;
     margin-bottom: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-adicionar-retirar:hover {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+    transition: 0.5;
+    transform: scale(1.03);
 }
 
 .info-produto-nome {
@@ -168,18 +188,16 @@ a, li {
 .info-produto-preco {
     color: #999999;
     font-weight: 500;
-    margin: 7px 0;
+    font-size: 15px;
+    margin-top: 10px;
 }
 
 
 /* PÁGINA DE OFERTA */
 
-/* a */
-
 .preco-desconto {
     display: flex;
     flex-direction: row;
-    margin: 7px 0;
 }
 
 .info-produto-preco-oferta {
@@ -192,9 +210,83 @@ a, li {
     color: #FE6F66;
     font-weight: 550; 
     font-size: 14px; 
-    margin-left: 5px; 
+    margin-left: 5px;
+    font-size: 15px; 
 }
 
 
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 5% 0 5% 3%;
+    color: #333333;
+}
+
+.container-f {
+    margin-right: 2%;
+    margin-top: 6%;
+}
+
+.titulos-container {
+    letter-spacing: 0.07em;
+    font-size: 16px;
+}
+
+.texto-conteudo {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    margin: 15px 0;
+}
+
+.titulos-container:hover, .texto-conteudo:hover {
+    text-decoration-line: underline;
+}
+
+.linha-f {
+    position: absolute;
+    width: 95%;
+    height: 1px;
+    background: #000000;
+    opacity: 10%;
+}
+
+.redes {
+    margin-top: 70px;
+    width: 40%;
+    height: auto;
+}
 
 
+/* RESPONSIVIDADE */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .container-imagem {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   
+    .container-imagem {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bloco-home {
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+
+    }
+}
